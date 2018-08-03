@@ -1,0 +1,5 @@
+projectKey=org.capgemini.product:ProductApp
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/org.capgemini.product:ProductApp
+ceTaskId=AWT6ore_dyeJX6t8NvQJ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AWT6ore_dyeJX6t8NvQJ
