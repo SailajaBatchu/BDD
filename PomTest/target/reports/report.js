@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3293582230,
+  "duration": 3300351358,
   "status": "passed"
 });
 formatter.scenario({
@@ -47,25 +47,21 @@ formatter.match({
   "location": "LoginStepDef.i_have_a_login_form()"
 });
 formatter.result({
-  "duration": 847602130,
+  "duration": 1050726407,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.username_and_password_matches()"
 });
 formatter.result({
-  "duration": 178367180,
+  "duration": 233256963,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginStepDef.login_Success()"
 });
 formatter.result({
-  "duration": 83102615,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 116413729,
+  "duration": 95199338,
   "status": "passed"
 });
 });

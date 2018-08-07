@@ -1,15 +1,15 @@
 package com.capg.login.stepdefinitionfile;
 
 
-import org.junit.Test;
-import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.openqa.selenium.support.PageFactory;
 
 import com.capg.login.pombean.LoginBean;
+import com.capg.login.util.Driver;
 
-import cucumber.api.java.After;
+
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -20,13 +20,11 @@ public class LoginStepDef {
 	
 	WebDriver driver;
 	LoginBean loginbean;
-	
+	Driver util=new Driver();
 	
 	@Before
 	public void init() {
-		System.setProperty("webdriver.chrome.driver", "D:\\Srinivas\\Selenium\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		util.startDriver();
 	}
 	
 	
@@ -34,8 +32,8 @@ public class LoginStepDef {
 	public void i_have_a_login_form() throws Throwable {
 	    // Write code here that turns the phrase above into concrete actions
 		
+		driver = util.getDriver();
 		
-		driver.get("http://localhost:8081/PomPractice/LoginForm.html");
 		loginbean = new LoginBean();
 		PageFactory.initElements(driver, loginbean);
 
@@ -57,8 +55,8 @@ public class LoginStepDef {
 		 loginbean.clickNextPage();
 	}
 
-	@After
+	/*@After
 	public void closeDriver() {
 		driver.close();
-	}
+	}*/
 }

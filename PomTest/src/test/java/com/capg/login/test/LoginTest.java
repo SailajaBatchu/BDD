@@ -16,11 +16,6 @@ import cucumber.api.junit.Cucumber;
 	)
 
 public class LoginTest {
-/*
-	@Test
-	public void test() {
-		
-		
-	}*/
+
 
 }
